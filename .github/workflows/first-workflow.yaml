@@ -1,5 +1,5 @@
 name: First Workflow
-on:[push]
+on: [push]
 
 jobs:
     run-shell-commands:
@@ -7,11 +7,10 @@ jobs:
         steps:
             - name: echo a string
               run: echo "Hello, World!"
-            - name:Multiline commands
+            - name: Multiline commands
               run: |
                 echo "This is line 1"
                 echo "This is line 2"
                 echo "This is line 3"
                 node -v
                 npm -v
-                
